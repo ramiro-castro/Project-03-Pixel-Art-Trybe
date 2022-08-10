@@ -12,8 +12,6 @@ for(let index = 0; index < 3; index += 1){
 }
 
 function generateColor() {
-	
-		
 		//alert("teste");
 	
 		const letters = '0123456789ABCDEF';
@@ -24,12 +22,9 @@ function generateColor() {
 		}
 		
 		return colorPalette (color);
-	
-	
-}
-  //console.log(generateColor()) // #8432EA
+}	
 
-function colorPalette(cor) {// um tipo de for mais rebuscado que ainda nao domino bem
+function colorPalette(cor) {
 
 	var setor = document.createElement('div');
 	if(cor == 'black'){
@@ -39,7 +34,6 @@ function colorPalette(cor) {// um tipo de for mais rebuscado que ainda nao domin
 		setor.className = 'color';
 	}
 	setor.value = cor;// define que o valor de determinado botao será o da cor dele cor, algo a ser passado para a função que escuta o click
-	//button.type = 'button';// define que a div buton será do tipo botão
 	setor.style.backgroundColor = cor;// cria o botao e coloca uma das cores nele
 	escolhas.appendChild(setor);// cria os varios botoes de acordo com a quantidade de cores do array
 		
@@ -47,11 +41,10 @@ function colorPalette(cor) {// um tipo de for mais rebuscado que ainda nao domin
 
 for(let index2 = 0; index2 < 25; index2 += 1){
 	criaQuadro ("white");
-	//contPixel+=1;
-	//alert("teste");
+
 }
 
-function criaQuadro(cor) {// um tipo de for mais rebuscado que ainda nao domino bem
+function criaQuadro(cor) {
 	//alert("teste");
 
 	var pixel = document.createElement('div');
@@ -59,74 +52,8 @@ function criaQuadro(cor) {// um tipo de for mais rebuscado que ainda nao domino 
 	pixel.value = cor;// define que o valor de determinado botao será o da cor dele cor, algo a ser passado para a função que escuta o click
 	//parte.type = 'button';// define que a div buton será do tipo botão
 	pixel.style.backgroundColor = cor;// cria o botao e coloca uma das cores nele
-	quadro.appendChild(pixel);// cria os varios botoes de acordo com a quantidade de cores do array
-	//button.addEventListener('click', handler(button));// cria o evento de escutar o clique na cor pretendida
-	//firstBlack();
+	
 }
-
-// escolhas[0].className = 'selected';
-
-// 	//alert(click);
-//   let filhos = escolhas.parentElement.childNodes;// target retorna o nó de elementos que foi clicado
-//   //alert(filhos);
-//   for(let index = 0; index<filhos.length; index+=1){
-// 		console.log(filhos);
-// 		if(filhos[index].backgroundColor = 'black'){
-// 			filhos[index].className = 'selected';
-// 		}else{
-//     		filhos[index].className = 'color';
-// 		}
-// 	}
-
-// colorPalette ("black");
-// for(let index = 0; index < cores.length; index += 1){
-// 	colorPalette (cores[index]);
-// 	//alert("teste");
-// }
-
-// function colorPalette(cor) {// um tipo de for mais rebuscado que ainda nao domino bem
-
-// 	var setor = document.childNodes;
-// 	if(cor == 'black'){
-// 	 	//alert('black');
-// 	 	setor.className = 'selected';// cria o botao e coloca uma das cores nele
-// 	}else{
-// 		setor.className = 'color';
-// 	}
-// 	setor.value = cor;// define que o valor de determinado botao será o da cor dele cor, algo a ser passado para a função que escuta o click
-// 	//button.type = 'button';// define que a div buton será do tipo botão
-// 	setor.style.backgroundColor = cor;// cria o botao e coloca uma das cores nele
-// 	//escolhas.childNodes(setor);// cria os varios botoes de acordo com a quantidade de cores do array
-		
-// }
-
-
-// function selectBlack(){
-// 	//location.reload();
-// 	colorPalette ("black");
-// 	for(let index = 0; index < cores.length; index += 1){
-// 		colorPalette (cores[index]);
-// 		//alert("teste");
-// 	}
-
-// 	function colorPalette(cor) {// um tipo de for mais rebuscado que ainda nao domino bem
-
-// 		var setor = document.createElement('div');
-// 		if(cor == 'black'){
-// 		 	//alert('black');
-// 		  	setor.className = 'selected';// cria o botao e coloca uma das cores nele
-// 		}else{
-// 			setor.className = 'color';
-// 		}
-// 		setor.value = cor;// define que o valor de determinado botao será o da cor dele cor, algo a ser passado para a função que escuta o click
-// 		//button.type = 'button';// define que a div buton será do tipo botão
-// 		setor.style.backgroundColor = cor;// cria o botao e coloca uma das cores nele
-// 		escolhas.appendChild(setor);// cria os varios botoes de acordo com a quantidade de cores do array
-			
-// 	}
-// }
-
-// window.onload = selectBlack;
 
 escolhas.addEventListener('click', function(e){//seleciona a cor da paleta
 	//alert(click);
