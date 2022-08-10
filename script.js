@@ -12,6 +12,8 @@ for(let index = 0; index < 3; index += 1){
 }
 
 function generateColor() {
+	
+		
 		//alert("teste");
 	
 		const letters = '0123456789ABCDEF';
@@ -52,7 +54,7 @@ function criaQuadro(cor) {
 	pixel.value = cor;// define que o valor de determinado botao será o da cor dele cor, algo a ser passado para a função que escuta o click
 	//parte.type = 'button';// define que a div buton será do tipo botão
 	pixel.style.backgroundColor = cor;// cria o botao e coloca uma das cores nele
-	
+	quadro.appendChild(pixel);
 }
 
 escolhas.addEventListener('click', function(e){//seleciona a cor da paleta
