@@ -3,7 +3,6 @@ body {
   background-size: cover;
   top: 10px;
   background-repeat: no-repeat;
-	
 }
 
 #title {
@@ -34,16 +33,20 @@ main {
   flex-flow: column nowrap;
 
 }
-  
+
+#tamanho {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #pixel-board {
   align-items: center;
   display: flex;
+  flex-flow: wrap;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   height: 1px;
   width: 280px;
-
 }
 
 #pixel-board div {
@@ -52,10 +55,8 @@ main {
   height: 40px;
   margin: 6px;
   border: 1px solid black;
-
 }
 
 #color-palette div:hover {
   cursor: pointer;
-	
 }
