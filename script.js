@@ -2,9 +2,6 @@ const escolhas = document.getElementById('color-palette');
 const quadro = document.getElementById('pixel-board');
 const botaoAlterar = document.getElementById('generate-board');
 let corSelecionada;
-const newQuadro = document.createElement('div');
-// https://stackoverflow.com/questions/9422974/createelement-with-id
-newQuadro.setAttribute('id', 'pixel-board');
 let tamanho = 5;
 
 function colorPalette(cor) { // cria a div e coloca uma das cores nele
@@ -71,12 +68,6 @@ escolhas.addEventListener('click', (e) => { // seleciona a cor da paleta
 });
 
 quadro.addEventListener('click', (e) => {
-  // pinta a div selecionada
-  // alert("teste");
-  e.target.style.backgroundColor = corSelecionada;// adiciona a cor selecionada ao quadro cliclado no pixel-board
-});
-
-newQuadro.addEventListener('click', (e) => {
   // pinta a div selecionada
   // alert("teste");
   e.target.style.backgroundColor = corSelecionada;// adiciona a cor selecionada ao quadro cliclado no pixel-board
