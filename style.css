@@ -1,5 +1,5 @@
 body {
-  background-image: url(paisagem.gif);
+  background-image: url('paisagem.gif');
   background-size: cover;
   top: 10px;
   background-repeat: no-repeat;
@@ -46,7 +46,9 @@ main {
   flex-direction: row;
   justify-content: center;
   height: 1px;
-  width: 280px;
+  width: 270px;
+
+  /* por tentativa e erro descobri esse valor de 270px */
 }
 
 #pixel-board div {
